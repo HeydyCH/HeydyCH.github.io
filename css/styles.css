@@ -1,12 +1,20 @@
 body {
-  background-color: cornsilk;
-  /* background-image: url(https://image.freepik.com/foto-gratis/vista-aerea-libro-rosa_23-2148213923.jpg); */
   font-family: Arial, Helvetica, sans-serif;
+  background-color: cornsilk;
+  background-image: url(https://image.freepik.com/foto-gratis/vista-aerea-libro-rosa_23-2148213923.jpg);
   background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: top;
 }
 
+h1,
 h2 {
-  color: cornflowerblue
+  color: green;
+}
+
+p {
+  line-height: 2em;
+  /* 1em aprox es 16 px */
 }
 
 img {
@@ -17,4 +25,32 @@ img {
   font-style: italic;
   font-weight: bold;
   color: rebeccapurple;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: yellowgreen;
+}
+
+a:focus {
+  border: 1px dotted darkslategray;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-roman;
 }
