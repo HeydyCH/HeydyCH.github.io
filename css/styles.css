@@ -1,38 +1,92 @@
 /* body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: cornsilk;
-  background-image: url(https://image.freepik.com/foto-gratis/vista-aerea-libro-rosa_23-2148213923.jpg);
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: top;
 } */
 
+/* -- General */
+body {
+  background-image: url('./../images/fondo.jpg');
+}
+
 @font-face {
   font-family: fuenteTitulos;
-  src: url(fuentes/Cabin-Italic.ttf);
+  src        : url(fuentes/Cabin-Italic.ttf);
 }
 
 @font-face {
   font-family: fuenteParrafos;
-  src: url(fuentes/FiraCode-Regular.otf);
+  src        : url(fuentes/FiraCode-Regular.otf);
 }
 
+nav,
+header,
+article {
+  margin: 0 20%;
+}
+
+/* -- Header */
+header {
+  background-color: #dac5bc;
+  font-size       : 3em;
+  text-align      : center;
+  padding         : 2rem;
+  font-family     : fuenteTitulos;
+}
+
+/* -- Nav */
+nav a:link {
+  color: #dae8ec;
+}
+
+nav a:visited {
+  color: #dac5bc;
+}
+
+nav a:focus {
+  border: 1px dotted darkslategray;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  background-color: #572313;
+  color           : #dae8ec;
+  font-family     : fuenteTitulos;
+}
+
+nav ul {
+  margin         : 0;
+  list-style-type: none;
+}
+
+/* -- Article */
 h1,
 h2 {
-  color: green;
+  color      : green;
   font-family: fuenteTitulos;
 }
 
-p {
-  color: darkslategrey;
-  line-height: 1.5em;
-  /* 1em aprox es 16 px */
+h1 {
+  font-size  : 2em;
+  margin     : 0;
+  padding-top: 1em;
 }
 
 ol,
 p {
   font-family: fuenteParrafos;
-  font-size: 20px;
+  font-size  : 20px;
+}
+
+p {
+  color      : darkslategrey;
+  line-height: 1.3em;
+  /* 1em aprox es 16 px */
 }
 
 img {
@@ -49,26 +103,42 @@ a {
   text-decoration: none;
 }
 
-a:link {
-  color: red;
+article a:link {
+  color: #b48464;
 }
 
-a:visited {
+article a:visited {
   color: yellowgreen;
 }
 
-a:focus {
+article a:focus {
   border: 1px dotted darkslategray;
 }
 
-a:hover {
+article a:hover {
   text-decoration: underline;
 }
 
-ul {
+article ul {
   list-style-type: square;
 }
 
-ol {
+article ol {
   list-style-type: lower-roman;
+}
+
+article {
+  /* border          : 5px solid brown; */
+  padding         : 0 2em;
+  background-color: #dae8ec;
+  opacity         : 0.8;
+}
+
+.borderradius {
+  border       : 2px solid #42352c;
+  border-radius: 15px 0 30px 0;
+}
+
+.image {
+  text-align: center;
 }
