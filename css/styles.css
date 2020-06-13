@@ -13,12 +13,12 @@ body {
 
 @font-face {
   font-family: fuenteTitulos;
-  src        : url(fuentes/Cabin-Italic.ttf);
+  src: url(fuentes/Cabin-Italic.ttf);
 }
 
 @font-face {
   font-family: fuenteParrafos;
-  src        : url(fuentes/FiraCode-Regular.otf);
+  src: url(fuentes/FiraCode-Regular.otf);
 }
 
 nav,
@@ -30,13 +30,19 @@ article {
 /* -- Header */
 header {
   background-color: #dac5bc;
-  font-size       : 3em;
-  text-align      : center;
-  padding         : 2rem;
-  font-family     : fuenteTitulos;
+  font-size: 3em;
+  text-align: center;
+  padding: 2rem;
+  font-family: fuenteTitulos;
 }
 
 /* -- Nav */
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem 0;
+}
+
 nav a:link {
   color: #dae8ec;
 }
@@ -55,36 +61,55 @@ nav a:hover {
 
 nav {
   background-color: #572313;
-  color           : #dae8ec;
-  font-family     : fuenteTitulos;
+  color: #dae8ec;
+  font-family: fuenteTitulos;
 }
 
 nav ul {
-  margin         : 0;
+  margin: 0;
   list-style-type: none;
 }
+
+nav li {
+  width: 10rem;
+  text-align: center;
+  display: inline-block;
+  border-right: #dac5bc solid;
+}
+
+nav li:hover {
+  /* background-color: #87A2AA; */
+  background-color: #3b6978;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.inicio {
+  border-left: #dac5bc solid;
+}
+
 
 /* -- Article */
 h1,
 h2 {
-  color      : green;
+  color: cadetblue;
   font-family: fuenteTitulos;
 }
 
 h1 {
-  font-size  : 2em;
-  margin     : 0;
+  font-size: 2em;
+  margin: 0;
   padding-top: 1em;
 }
 
 ol,
 p {
   font-family: fuenteParrafos;
-  font-size  : 20px;
+  font-size: 20px;
 }
 
 p {
-  color      : darkslategrey;
+  color: darkslategrey;
   line-height: 1.3em;
   /* 1em aprox es 16 px */
 }
@@ -94,9 +119,7 @@ img {
 }
 
 .resaltar {
-  /* font-style: italic;
-  font-weight: bold; */
-  color: rebeccapurple;
+  /* color: rebeccapurple; */
 }
 
 a {
@@ -129,13 +152,13 @@ article ol {
 
 article {
   /* border          : 5px solid brown; */
-  padding         : 0 2em;
+  padding: 0 2em;
   background-color: #dae8ec;
-  opacity         : 0.8;
+  opacity: 0.8;
 }
 
 .borderradius {
-  border       : 2px solid #42352c;
+  border: 2px solid #42352c;
   border-radius: 15px 0 30px 0;
 }
 
