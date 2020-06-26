@@ -1,0 +1,94 @@
+/* General */
+
+body {
+  /* background-image: url('./../images/fondo.jpg'); */
+}
+
+@font-face {
+  font-family: fuenteTitulos;
+  src: url(fuentes/Cabin-Italic.ttf);
+}
+
+@font-face {
+  font-family: fuenteParrafos;
+  src: url(fuentes/FiraCode-Regular.otf);
+}
+
+nav,
+header,
+article {
+  margin: 0 1rem;
+}
+
+/* -- Header */
+header {
+  font-size: 3em;
+  text-align: center;
+  padding: 2rem;
+  font-family: fuenteTitulos;
+}
+
+/* -- Nav */
+nav {
+  font-family: fuenteTitulos;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav a:link {
+  color: #9b8787;
+  font-weight: 700;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem 0;
+}
+
+nav li {
+  width: 5rem;
+  text-align: center;
+  display: inline-block;
+}
+
+
+/* Contenido */
+
+.card {
+  font-family: fuenteParrafos;
+  padding: 2rem;
+  width: 80rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: fuenteTitulos;
+  font-size: 30px;
+  margin: 5px 0;
+}
+
+.footer-card {
+  margin: 1rem 0;
+}
+
+p {
+  line-height: 1.8em;
+  margin: 5px 0px;
+}
+
+
+.header-card {
+  color: #a19e9b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.alinearIzq {
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
