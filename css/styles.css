@@ -74,7 +74,8 @@ nav li {
   width: 10rem;
   text-align: center;
   display: inline-block;
-  border-right: #dac5bc solid;
+  background-color: seagreen;
+  /* border-right: #dac5bc solid; */
 }
 
 nav li:hover {
@@ -85,7 +86,7 @@ nav li:hover {
 }
 
 .inicio {
-  border-left: #dac5bc solid;
+  /* border-left: #dac5bc solid; */
 }
 
 
@@ -164,4 +165,18 @@ article {
 
 .image {
   text-align: center;
+}
+
+/* FLEXBOX */
+
+ul {
+  /* list-style-type: none; */
+  padding: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+li {
+  flex-basis: 15%;
 }
