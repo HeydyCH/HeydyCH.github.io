@@ -23,8 +23,8 @@ article {
 /* -- Header */
 header {
   font-size: 3em;
-  text-align: center;
-  padding: 2rem;
+  /* text-align: center; */
+  padding: 1rem;
   font-family: fuenteTitulos;
 }
 
@@ -57,14 +57,14 @@ nav li {
 
 .card {
   font-family: fuenteParrafos;
-  padding: 2rem;
-  width: 80rem;
+  /* padding: 2rem; */
+  width: 75rem;
   margin: 0 auto;
 }
 
 .title {
   font-family: fuenteTitulos;
-  font-size: 30px;
+  font-size: 25px;
   margin: 5px 0;
 }
 
@@ -77,6 +77,9 @@ p {
   margin: 5px 0px;
 }
 
+.content-card {
+  padding: 15px 15px 0 0;
+}
 
 .header-card {
   color: #a19e9b;
@@ -91,4 +94,26 @@ p {
 .alinearIzq {
   float: left;
   margin: 0 1rem 1rem 0;
+  width: 500px;
+}
+
+.img {
+  width: 500px;
+}
+
+.card-text {
+  font-size: 10px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  border-bottom: 1px solid #c2baba;
+  margin-bottom: 50px;
+}
+
+li {
+  flex-basis: 10%;
 }
