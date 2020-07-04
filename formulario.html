@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style-form.css">
   <title>Reserva de Pasajes</title>
 </head>
 <!-- 
@@ -25,9 +26,29 @@
 -->
 
 <body>
-  <form action="">
-
-  </form>
+  <div class="wrapper">
+    <h1>Reserva de Pasajes </h1>
+    <form action="">
+      <fieldset>
+        <legend> Datos de Pasajero</legend>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name">
+        <label for="lastname">apellidos</label>
+        <input type="text" name="lastname" id="lastname">
+        <label for="date_birthday">Fecha de nacimiento</label>
+        <input type="date" name="date_birthday" id="date_birthday">
+        <label for="email"> E-mail</label>
+        <input type="text" name="email" id="email">
+        <label for="phone">Teléfono</label>
+        <input type="tel" name="phone" id="phone">
+        <br>
+        <label for="noticias">
+          <input type="checkbox" name="" id="noticias">
+          Debe recibir noticias por email
+        </label>
+      </fieldset>
+    </form>
+  </div>
 
 </body>
 

@@ -1,0 +1,12 @@
+body {
+  background-color: burlywood;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+}
