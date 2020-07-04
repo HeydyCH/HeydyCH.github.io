@@ -47,6 +47,46 @@
           Debe recibir noticias por email
         </label>
       </fieldset>
+      <fieldset>
+        <legend> Datos del viaje</legend>
+        <label for="origen">Origen</label>
+        <select name="origen" id="origen">
+          <option value="lima">Lima</option>
+          <option value="pisco">Pisco</option>
+          <option value="ica">Ica</option>
+          <option value="chincha">Chincha</option>
+        </select>
+        <label for="destino">Destino</label>
+        <select name="destino" id="destino">
+          <option value="lima">Lima</option>
+          <option value="pisco">Pisco</option>
+          <option value="ica">Ica</option>
+          <option value="chincha">Chincha</option>
+        </select>
+        <label for="date_ida">Fecha de Ida</label>
+        <input type="date" name="date_ida" id="date_ida">
+
+        <label for="date_vuelta">Fecha de Vuelta</label>
+        <input type="date" name="date_vuelta" id="date_vuelta">
+
+        <label for="hours"> Hora</label>
+        <label for="hora8">
+          <input type="radio" name="hora" id="hora8" value="8">8:00
+        </label>
+        <label for="hora10">
+          <input type="radio" name="hora" id="hora10" value="10">10:00
+        </label>
+        <label for="hora12">
+          <input type="radio" name="hora" id="hora12" value="12">12:00
+        </label>
+        <label for="food">Preferencia de comida</label>
+        <label for="pasta"><input type="checkbox" name="pasta" id="pasta">Pasta</label>
+        <label for="carne"><input type="checkbox" name="carne" id="carne">Carne</label>
+        <label for="pollo"><input type="checkbox" name="pollo" id="pollo">Pollo</label>
+        <label for="pescado"><input type="checkbox" name="pescado" id="pescado">Pescado</label>
+        <br>
+      </fieldset>
+      <button>Reservar Pasaje</button>
     </form>
   </div>
 
