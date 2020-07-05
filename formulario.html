@@ -27,69 +27,84 @@
 
 <body>
   <div class="wrapper">
-    <h1>Reserva de Pasajes </h1>
-    <form action="">
-      <fieldset>
-        <legend> Datos de Pasajero</legend>
-        <label for="name">Nombre</label>
-        <input type="text" name="name" id="name" placeholder="Ingresa tu 1er nombre">
-        <label for="lastname">apellidos</label>
-        <input type="text" name="lastname" id="lastname" placeholder="Ingresa tu 1er apellido">
-        <label for="date_birthday">Fecha de nacimiento</label>
-        <input type="date" name="date_birthday" id="date_birthday">
-        <label for="email"> E-mail</label>
-        <input type="text" name="email" id="email" placeholder="Ingresa tu email">
-        <label for="phone">Teléfono</label>
-        <input type="tel" name="phone" id="phone" placeholder=" (+51) ### ### ###">
-        <br>
-        <label for="noticias">
-          <input type="checkbox" name="" id="noticias">
-          Debe recibir noticias por email
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend> Datos del viaje</legend>
-        <label for="origen">Origen</label>
-        <select name="origen" id="origen">
-          <option value="lima">Lima</option>
-          <option value="pisco">Pisco</option>
-          <option value="ica">Ica</option>
-          <option value="chincha">Chincha</option>
-        </select>
-        <label for="destino">Destino</label>
-        <select name="destino" id="destino">
-          <option value="lima">Lima</option>
-          <option value="pisco">Pisco</option>
-          <option value="ica">Ica</option>
-          <option value="chincha">Chincha</option>
-        </select>
-        <label for="date_ida">Fecha de Ida</label>
-        <input type="date" name="date_ida" id="date_ida">
+    <div class="header-formulario">
+      <h1><img class="img-titulo" src="./images/viaje2.png" alt="icono de avion"> Reserva de Pasajes </h1>
+      <p>
+        <img src="https://s.latamstatic.com/content/dam/LATAM/logos/logo-latam-252px.png" alt="Imagen de latam">
 
-        <label for="date_vuelta">Fecha de Vuelta</label>
-        <input type="date" name="date_vuelta" id="date_vuelta">
+      </p>
+    </div>
+    <div>
+      <form action="">
+        <fieldset>
+          <legend> Datos de Pasajero</legend>
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" placeholder="Ingresa tu 1er nombre">
+          <label for="lastname">Apellidos</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Ingresa tu 1er apellido">
+          <label for="date_birthday">Fecha de nacimiento</label>
+          <input type="date" name="date_birthday" id="date_birthday">
+          <label for="email"> E-mail</label>
+          <input type="text" name="email" id="email" placeholder="Ingresa tu email">
+          <label for="phone">Teléfono</label>
+          <input type="tel" name="phone" id="phone" placeholder="(+51) ### ### ###">
+          <br>
+          <label for="noticias">
+            <input type="checkbox" name="" id="noticias">
+            Debe recibir noticias por email
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend> Datos del viaje</legend>
+          <label for="origen">Origen</label>
+          <select name="origen" id="origen">
+            <option value="lima">Lima</option>
+            <option value="pisco">Pisco</option>
+            <option value="ica">Ica</option>
+            <option value="chincha">Chincha</option>
+          </select>
+          <label for="destino">Destino</label>
+          <select name="destino" id="destino">
+            <option value="lima">Lima</option>
+            <option value="pisco">Pisco</option>
+            <option value="ica">Ica</option>
+            <option value="chincha">Chincha</option>
+          </select>
+          <label for="date_ida">Fecha de Ida</label>
+          <input type="date" name="date_ida" id="date_ida">
 
-        <label for="hours"> Hora</label>
-        <label for="hora8">
-          <input type="radio" name="hora" id="hora8" value="8">8:00
-        </label>
-        <label for="hora10">
-          <input type="radio" name="hora" id="hora10" value="10">10:00
-        </label>
-        <label for="hora12">
-          <input type="radio" name="hora" id="hora12" value="12">12:00
-        </label>
-        <label for="food">Preferencia de comida</label>
-        <label for="pasta"><input type="checkbox" name="pasta" id="pasta">Pasta</label>
-        <label for="carne"><input type="checkbox" name="carne" id="carne">Carne</label>
-        <label for="pollo"><input type="checkbox" name="pollo" id="pollo">Pollo</label>
-        <label for="pescado"><input type="checkbox" name="pescado" id="pescado">Pescado</label>
-        <br>
-      </fieldset>
-      <button>Reservar Pasaje</button>
-    </form>
+          <label for="date_vuelta">Fecha de Vuelta</label>
+          <input type="date" name="date_vuelta" id="date_vuelta">
+
+          <div class="div-hours">
+            <label for="hours"> Hora</label>
+            <label for="hora8">
+              <input type="radio" name="hora" id="hora8" value="8">8:00
+            </label>
+            <label for="hora10">
+              <input type="radio" name="hora" id="hora10" value="10">10:00
+            </label>
+            <label for="hora12">
+              <input type="radio" name="hora" id="hora12" value="12">12:00
+            </label>
+          </div>
+
+          <div class="div-food">
+            <label for="food">Preferencia de comida</label>
+            <label for="pasta"><input type="checkbox" name="pasta" id="pasta">Pasta</label>
+            <label for="carne"><input type="checkbox" name="carne" id="carne">Carne</label>
+            <label for="pollo"><input type="checkbox" name="pollo" id="pollo">Pollo</label>
+            <label for="pescado"><input type="checkbox" name="pescado" id="pescado">Pescado</label>
+          </div>
+          <br>
+        </fieldset>
+        <div class="div-button">
+          <button>Reservar Pasaje</button>
+        </div>
+      </form>
+    </div>
+
   </div>
-
 </body>
 
 </html>

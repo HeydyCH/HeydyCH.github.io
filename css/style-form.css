@@ -1,57 +1,102 @@
 body {
-  background-color: burlywood;
-  margin          : 0;
+  margin: 0;
 }
 
+/* BODY*/
 .wrapper {
-  width           : 70%;
-  margin          : 0 auto;
-  background-color: cadetblue;
-  padding         : 0 2rem 1rem;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #1B0088;
+  color: white;
+  padding: 1rem 2rem 1rem;
 }
 
 h1 {
-  margin       : 0;
+  margin: 0;
   margin-bottom: 1rem;
 }
 
 label {
   display: block;
-  margin : 0.3rem 0;
+  margin: 0.3rem 0;
 }
 
 fieldset {
-  border       : 1px solid black;
+  border: 1px solid whitesmoke;
   border-radius: 10px;
-  padding      : 1rem;
+  padding: 1rem;
   margin-bottom: 1rem;
 }
 
 legend {
-  font-size  : 1.3rem;
+  font-size: 1.3rem;
   font-weight: bold;
+}
+
+input {
+  font-size: 16px;
 }
 
 input[type="date"],
 input[type="tel"],
 input[type="text"] {
+  border: 1px solid gray;
   border-radius: 10px;
-  font-family  : Verdana, Geneva, Tahoma, sans-serif;
+  height: 2.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 1rem;
+  margin: 0 0 1rem;
+}
+
+input[type="date"],
+input[type="tel"] {
+  width: 25%;
 }
 
 input[type="text"] {
-  width : 70%;
-  border: 1px solid gray;
-  height: 1.5rem;
+  width: 70%;
+  margin: 0 0 1rem;
+}
+
+select {
+  padding-left: 1rem;
+  border-radius: 10px;
+  width: 20%;
+  margin: 0 0 1rem;
+  height: 2.2rem;
 }
 
 button {
-  height       : 2rem;
-  border       : 1px solid gray;
+  height: 2.2rem;
+  border: 1px solid gray;
   border-radius: 10px;
+  font-size: 16px;
+  background-color: brown;
+  color: white;
+  padding: 2px 10px;
+  width: 200px;
 }
 
 button:hover {
-  background-color: brown;
-  color           : white;
+  /* background-color: brown; */
+  color: white;
+  opacity: 0.8;
+}
+
+.img-titulo {
+  height: 2rem;
+}
+
+.header-formulario {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-hours,
+.div-food {
+  margin: 0 0 1rem;
+}
+
+.div-button {
+  text-align: center;
 }
